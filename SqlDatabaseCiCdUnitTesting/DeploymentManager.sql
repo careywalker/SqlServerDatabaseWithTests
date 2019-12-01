@@ -9,3 +9,9 @@ Post-Deployment Script Template
                SELECT * FROM [$(TableName)]					
 --------------------------------------------------------------------------------------
 */
+:r .\Schemas\Internal.sql
+:r .\Internal\Tables\internal.ChangeTracker.sql
+:r .\Internal\Tables\internal.AccountStatus.sql
+:r .\Internal\Tables\internal.Account.sql
+:r .\Internal\StoredProcedures\internal.AccountSelect.sql
+:r .\Internal\StoredProcedures\internal.AccountUpsert.sql

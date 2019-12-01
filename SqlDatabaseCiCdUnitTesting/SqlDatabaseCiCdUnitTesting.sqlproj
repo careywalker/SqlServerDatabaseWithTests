@@ -57,8 +57,19 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Internal" />
+    <Folder Include="Internal\Tables" />
+    <Folder Include="Internal\StoredProcedures" />
+    <Folder Include="Schemas" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="DeploymentManager.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Internal\Tables\internal.ChangeTracker.sql" />
+    <None Include="Schemas\Internal.sql" />
+    <None Include="Internal\Tables\internal.Account.sql" />
+    <None Include="Internal\Tables\internal.AccountStatus.sql" />
+    <None Include="Internal\StoredProcedures\internal.AccountUpsert.sql" />
+    <None Include="Internal\StoredProcedures\internal.AccountSelect.sql" />
   </ItemGroup>
 </Project>
