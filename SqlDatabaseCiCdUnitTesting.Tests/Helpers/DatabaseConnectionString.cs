@@ -7,8 +7,9 @@ namespace SqlDatabaseCiCdUnitTesting.Tests.Helpers
     {
         public static string GetDatabaseConnectionString()
         {
+            var buildConfiguration = ConfigurationManager.AppSettings["BuildConfiguration"];
             var connectionString = ConfigurationManager.ConnectionStrings["ApplicationDatabase"].ConnectionString;
-            var updatedConnectionString = connectionString.Replace("UnitTests", $"UnitTests_{UniqueDatabaseId}");
+            var updatedConnectionString = connectionString.Replace(buildConfiguration, $"UnitTests_{UniqueDatabaseId}");
             return updatedConnectionString;
         }
 

@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SqlDatabaseCiCdUnitTesting", "SqlDatabaseCiCdUnitTesting\SqlDatabaseCiCdUnitTesting.sqlproj", "{9B39DAA8-3C63-49D5-AEB2-E6B86D6D9C9D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlDatabaseCiCdUnitTesting.Tests", "SqlDatabaseCiCdUnitTesting.Tests\SqlDatabaseCiCdUnitTesting.Tests.csproj", "{C813CAE3-6EED-4760-A009-45A6547FB342}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9B39DAA8-3C63-49D5-AEB2-E6B86D6D9C9D} = {9B39DAA8-3C63-49D5-AEB2-E6B86D6D9C9D}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

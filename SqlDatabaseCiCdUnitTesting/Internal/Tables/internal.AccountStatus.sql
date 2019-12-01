@@ -3,7 +3,7 @@ BEGIN
 	CREATE TABLE [internal].[AccountStatus]
 	(
 		[Id] SMALLINT NOT NULL
-		,[StatusTitle] CHAR(20) NOT NULL
+		,[StatusTitle] VARCHAR(20) NOT NULL
 		,[CreatedDateTime] DATETIME2(7) NOT NULL DEFAULT (SYSDATETIME())
 		,[CreatedBy] VARCHAR(50) NOT NULL DEFAULT (SUSER_NAME())
 		,CONSTRAINT [PK_AccountStatus] PRIMARY KEY CLUSTERED
