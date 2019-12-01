@@ -3,3 +3,4 @@ This is an example of using Sql Server Data Tools and Visual Studio to build a .
 
 The other project included is a MSTest project. The code in the test project deploys the database and runs the unit tests against the database. This allows you to build unit tests for your database code.
 
+To build the solution, make sure you have the latest version of Visual Studio (I have 16.3.10) and you have the Data Storage and Processing workload installed.
