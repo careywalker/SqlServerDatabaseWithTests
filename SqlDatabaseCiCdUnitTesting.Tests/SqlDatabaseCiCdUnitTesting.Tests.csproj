@@ -74,7 +74,7 @@
   <ItemGroup>
     <Compile Include="DatabaseSetupAndTeardown.cs" />
     <Compile Include="Helpers\Account.cs" />
-    <Compile Include="Helpers\DapperWrapper.cs" />
+    <Compile Include="Helpers\DapperAdapter.cs" />
     <Compile Include="Helpers\DatabaseConnectionString.cs" />
     <Compile Include="Internal\StoredProcedures\InternalAccountSelectTests.cs" />
     <Compile Include="Internal\StoredProcedures\InternalAccountUpsertTests.cs" />

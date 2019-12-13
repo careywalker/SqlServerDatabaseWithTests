@@ -4,7 +4,7 @@ using System.Data;
 
 namespace SqlDatabaseCiCdUnitTesting.Tests.Helpers
 {
-    public class DapperWrapper
+    public class DapperAdapter
     {
         public int Execute(IDbConnection dbconnection, string sql, object param = null)
         {
